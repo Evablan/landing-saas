@@ -1,4 +1,9 @@
 import Container from "./ui/Container";
+import logo1 from "../assets/logo1.jpg";
+import logo2 from "../assets/logo2.jpg";
+import logo3 from "../assets/logo3.jpg";
+import logo4 from "../assets/logo4.jpg";
+
 
 /**
  * Carrusel de logos:
@@ -9,12 +14,12 @@ import Container from "./ui/Container";
  */
 export default function Logos() {
     const logos = [
-        { src: "/logos/logo1.jpg", alt: "Empresa Uno" },
-        { src: "/logos/logo2.jpg", alt: "Empresa Dos" },
-        { src: "/logos/logo3.jpg", alt: "Empresa Tres" },
-        { src: "/logos/logo4.jpg", alt: "Empresa Cuatro" },
-        { src: "/logos/logo1.jpg", alt: "Empresa Cinco" },
-        { src: "/logos/logo4.jpg", alt: "Empresa Seis" },
+        { src: logo1, alt: "Empresa Uno" },
+        { src: logo2, alt: "Empresa Dos" },
+        { src: logo3, alt: "Empresa Tres" },
+        { src: logo4, alt: "Empresa Cuatro" },
+        { src: logo1, alt: "Empresa Cinco" },
+        { src: logo4, alt: "Empresa Seis" },
     ];
 
     // Duplicamos para que al llegar al 50% continúe sin salto
@@ -35,7 +40,7 @@ export default function Logos() {
                                 src={it.src}
                                 alt={it.alt}
                                 loading="lazy"
-                                className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition mx-6"
+                                className="h-20 w-auto object-contain opacity-80 hover:opacity-100 transition mx-6"
                                 onError={(e) => {
                                     console.log('Error loading logo:', it.src);
                                     e.target.style.display = 'none';
