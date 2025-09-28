@@ -9,12 +9,12 @@ import Container from "./ui/Container";
  */
 export default function Logos() {
     const logos = [
-        { src: "https://via.placeholder.com/150x60/3b82f6/ffffff?text=Company+1", alt: "Empresa Uno" },
-        { src: "https://via.placeholder.com/150x60/10b981/ffffff?text=Company+2", alt: "Empresa Dos" },
-        { src: "https://via.placeholder.com/150x60/f59e0b/ffffff?text=Company+3", alt: "Empresa Tres" },
-        { src: "https://via.placeholder.com/150x60/ef4444/ffffff?text=Company+4", alt: "Empresa Cuatro" },
-        { src: "https://via.placeholder.com/150x60/8b5cf6/ffffff?text=Company+5", alt: "Empresa Cinco" },
-        { src: "https://via.placeholder.com/150x60/06b6d4/ffffff?text=Company+6", alt: "Empresa Seis" },
+        { src: "/logos/logo1.jpg", alt: "Empresa Uno" },
+        { src: "/logos/logo2.jpg", alt: "Empresa Dos" },
+        { src: "/logos/logo3.jpg", alt: "Empresa Tres" },
+        { src: "/logos/logo4.jpg", alt: "Empresa Cuatro" },
+        { src: "/logos/logo1.jpg", alt: "Empresa Cinco" },
+        { src: "/logos/logo4.jpg", alt: "Empresa Seis" },
     ];
 
     // Duplicamos para que al llegar al 50% continúe sin salto
