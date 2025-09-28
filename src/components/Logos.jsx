@@ -34,7 +34,11 @@ export default function Logos() {
                                 src={it.src}
                                 alt={it.alt}
                                 loading="lazy"
-                                className="h-40 w-auto object-contain opacity-80  hover:opacity-100 transition mx-6"
+                                className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition mx-6"
+                                onError={(e) => {
+                                    console.log('Error loading logo:', it.src);
+                                    e.target.style.display = 'none';
+                                }}
                             />
                         ))}
                     </div>
