@@ -1,37 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
+import Features from './components/Features'
+import PricingSection from './components/Pricing/PricingSection'
+import FAQ from './components/FAQ'
+import Logos from './components/Logos'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div className="min-h-dvh bg-white text-neutral-900 p-8">
-        <h1 className="text-4xl text-emerald-600">Hola Tailwind</h1>
-      </div>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    <div className="relative min-h-dvh w-full bg-gradient-hero text-white">
+
+      {/* Capas de fondo (no interfieren) */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-tl from-cyan-500/10 to-transparent"></div>
+      <div className="absolute inset-0 bg-particles"></div>
+      <Navbar />
+      <main className="relative"> {/* relative para estar sobre las capas */}
+        <Hero />
+        <Logos />
+        <Features />
+        <PricingSection />
+        <FAQ />
+      </main>
+    </div>
   )
 }
 
