@@ -3,8 +3,9 @@ import Container from "./ui/Container";
 /**
  * Carrusel de logos:
  * - Duplicamos la lista para un bucle continuo
- * - Animación CSS que mueve la “cinta” la mitad de su ancho (-50%)
+ * - Animación CSS que mueve la "cinta" la mitad de su ancho (-50%)
  * - Pausa al pasar el ratón y respeta prefers-reduced-motion
+ * - Using placeholder logos for immediate loading
  */
 export default function Logos() {
     const logos = [
