@@ -1,5 +1,5 @@
 import Section from "./Section";
-import { FEATURES } from "../data/features";
+import { FEATURES } from "../data/features.jsx";
 
 export default function Features() {
 

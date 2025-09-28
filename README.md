@@ -11,6 +11,8 @@ Une landing page SaaS moderne et responsive construite avec React, Vite et Tailw
 - **Accessibilité** - Conforme aux standards WCAG
 - **Performance** - Optimisé avec Vite et React
 - **SEO Ready** - Structure sémantique et meta tags
+- **Icones SVG personnalisés** - Design professionnel et scalable
+- **Effets hover avancés** - Interactions dynamiques sur les cartes
 
 ## 📋 Sections incluses
 
@@ -30,6 +32,8 @@ Une landing page SaaS moderne et responsive construite avec React, Vite et Tailw
 - **JavaScript ES6+** - Syntaxe moderne
 - **CSS3** - Animations et effets visuels
 - **HTML5** - Structure sémantique
+- **SVG** - Icônes vectorielles personnalisées
+- **Glassmorphism** - Effets de transparence modernes
 
 ## 🚀 Installation
 
@@ -83,14 +87,16 @@ Modifiez les couleurs dans `src/index.css` :
 - **Textes** : Modifiez les fichiers dans `src/data/`
 - **Images** : Remplacez les logos dans `src/assets/`
 - **Plans** : Éditez `src/data/plans.js`
+- **Fonctionnalités** : Personnalisez les icônes SVG dans `src/data/features.jsx`
 
 ### Composants
 Tous les composants sont modulaires dans `src/components/` :
-- `Hero.jsx` - Section principale
-- `Navbar.jsx` - Navigation
-- `Features.jsx` - Fonctionnalités
-- `Pricing/` - Section tarifs
-- `FAQ.jsx` - Questions fréquentes
+- `Hero.jsx` - Section principale avec formulaire email
+- `Navbar.jsx` - Navigation responsive avec glassmorphism
+- `Features.jsx` - Fonctionnalités avec icônes SVG personnalisés
+- `Pricing/` - Section tarifs avec toggle mensuel/annuel
+- `FAQ.jsx` - Questions fréquentes avec accordéon
+- `Logos.jsx` - Carrousel de logos partenaires
 
 ## 🌐 Déploiement
 
