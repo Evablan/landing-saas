@@ -8,12 +8,12 @@ import Container from "./ui/Container";
  */
 export default function Logos() {
     const logos = [
-        { src: "/src/logos/logo1.jpg", alt: "Empresa Uno" },
-        { src: "/src/logos/logo2.jpg", alt: "Empresa Dos" },
-        { src: "/src/logos/logo3.jpg", alt: "Empresa Tres" },
-        { src: "/src/logos/logo4.jpg", alt: "Empresa Cuatro" },
-        { src: "/src/logos/logo1.jpg", alt: "Empresa Cinco" },
-        { src: "/src/logos/logo4.jpg", alt: "Empresa Seis" },
+        { src: "/logos/logo1.jpg", alt: "Empresa Uno" },
+        { src: "/logos/logo2.jpg", alt: "Empresa Dos" },
+        { src: "/logos/logo3.jpg", alt: "Empresa Tres" },
+        { src: "/logos/logo4.jpg", alt: "Empresa Cuatro" },
+        { src: "/logos/logo1.jpg", alt: "Empresa Cinco" },
+        { src: "/logos/logo4.jpg", alt: "Empresa Seis" },
     ];
 
     // Duplicamos para que al llegar al 50% continúe sin salto
